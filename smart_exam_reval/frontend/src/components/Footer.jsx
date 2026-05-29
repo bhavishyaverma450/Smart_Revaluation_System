@@ -31,10 +31,14 @@ const Footer = () => {
                     <div className="min-w-0">
                         <h3 className="text-slate-900 dark:text-white font-semibold mb-4">Contact</h3>
                         <ul className="space-y-2">
-                            <li className="flex items-center gap-2">
-                                {/* flex-shrink-0 prevents the icon from compressing; break-all ensures long emails wrap properly on mobile */}
-                                <Mail className="w-4 h-4 flex-shrink-0" aria-hidden="true" />
-                                <a href="mailto:smartrevaluationsystem@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors break-all">smartrevaluationsystem@gmail.com</a>
+                            <li className="flex items-start gap-2">
+                            <Mail className="w-4 h-4 flex-shrink-0 mt-1" />
+                            <a
+                                href="mailto:smartrevaluationsystem@gmail.com"
+                                className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors break-words"
+                            >
+                                smartrevaluationsystem@gmail.com
+                            </a>
                             </li>
                             <li>Chennai,Tamil Nadu</li>
                         </ul>
