@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { GraduationCap, Github, Twitter, Linkedin, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -40,7 +40,10 @@ const Footer = () => {
                                 smartrevaluationsystem@gmail.com
                             </a>
                             </li>
-                            <li>Chennai,Tamil Nadu</li>
+                            <li className="flex items-start gap-2">
+                                <MapPin className="w-4 h-4 flex-shrink-0 mt-1" />
+                                <span>Chennai, Tamil Nadu</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
