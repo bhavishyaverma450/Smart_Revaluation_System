@@ -18,6 +18,7 @@ import ResetPassword from './pages/ResetPassword';
 import DashboardLayout from './components/DashboardLayout';
 import RevalAssistantWidget from './components/RevalAssistantWidget';
 import PaymentPage from './pages/PaymentPage';
+import BackToTop from './components/Backtotop';
 
 // Dashboards (Lazy Loaded)
 const StudentDashboard = React.lazy(() => import('./pages/StudentDashboard'));
@@ -39,7 +40,7 @@ function App() {
           />
 
           <RevalAssistantWidget />
-
+          <BackToTop/>
 
           <React.Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950"><LoadingSpinner /></div>}>
             <Routes>
